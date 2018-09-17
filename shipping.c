@@ -3,7 +3,7 @@
 #include "statemodel.h" // For the other states
 
 // Create the object of the accpeting state
-state_t accepting = {
+state_t shipping = {
     default_event_handler, // order_recieved
     default_event_handler, // invalid_payment
     default_event_handler, // valid_payment
@@ -13,7 +13,7 @@ state_t accepting = {
     shipment_lost,         // shipment_lost
     entry_to_shipping,     // entry_to
     exit_from_shipping     // exit_from
-}
+};
 
 state_t* shipment_arrived() {
     startWarranty();
