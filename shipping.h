@@ -6,5 +6,5 @@
 // Declare all of the functions performed when in the shipping state
 static state_t* shipment_arrived();
 static state_t* shipment_lost();
-static void entry_to_shipping();
-
+static void     entry_to_shipping();
+static void     exit_from_shipping();

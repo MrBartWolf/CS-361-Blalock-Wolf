@@ -12,7 +12,7 @@ state_t accepting = {
     shipment_arrived,      // shipment_arrived
     shipment_lost,         // shipment_lost
     entry_to_shipping,     // entry_to
-    default_action         // exit_from
+    exit_from_shipping     // exit_from
 }
 
 state_t* shipment_arrived() {
@@ -30,3 +30,5 @@ state_t* shipment_lost() {
 void entry_to_shipping() {
     getAddress();
 }
+
+void exit_from_shipping() {}

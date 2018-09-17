@@ -11,13 +11,17 @@ state_t accepting = {
     default_event_handler, // manufacture_completed
     default_event_handler, // shipment_arrived
     default_event_handler, // shipment_lost
-    default_action,    // entry_to
-    default_action    // exit_from
-}
+    entry_to_accepting,    // entry_to
+    exit_from_accepting    // exit_from
+};
 
 state_t* order_recieved() {
     getOrderSize();
     resetAttempts();
     return &processing;
 }
+
+void entry_to_accepting() {}
+
+void exit_from_accepting() {}
 
