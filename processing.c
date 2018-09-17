@@ -1,5 +1,4 @@
 #include "processing.h"
-#include "system.h"
 #include "statemodel.h"
 
 state_t processing = {
