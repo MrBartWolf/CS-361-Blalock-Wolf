@@ -1,0 +1,12 @@
+#include <stdlib.h>
+#include "state.h"
+
+// Define the default event handler and the default action
+
+state_t * default_event_handler()
+{
+    return NULL;
+}
+
+void default_action()
+{}
