@@ -16,8 +16,8 @@ state_t accepting = {
 };
 
 state_t* order_recieved() {
-    getOrderSize();
-    resetAttempts();
+    get_order_size();
+    reset_attempts();
     return &processing;
 }
 

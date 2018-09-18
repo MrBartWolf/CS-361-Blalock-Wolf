@@ -16,19 +16,19 @@ state_t shipping = {
 };
 
 state_t* shipment_arrived() {
-    startWarranty();
-    updateStats(DONE);
+    start_warranty();
+    update_stats(DONE);
     return &accepting;
 } 
 
 state_t* shipment_lost() {
     refund();
-    updateStats(LOST);
+    update_stats(LOST);
     return &accepting;
 }
 
 void entry_to_shipping() {
-    getAddress();
+    get_address();
 }
 
 void exit_from_shipping() {}
