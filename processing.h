@@ -6,6 +6,5 @@
 static state_t* invalid_payment();
 static state_t* valid_payment();
 static void     entry_to_processing();
-static void     exit_from_processing();
 
 #endif

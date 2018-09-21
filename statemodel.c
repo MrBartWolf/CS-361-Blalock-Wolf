@@ -12,7 +12,7 @@ void handle_event(event current_event)
     next_state = NULL;
     switch(current_event)
     {
-        case ORDER_RECIEVED:
+        case ORDER_RECEIVED:
             next_state = current_state->order_recieved();
             break;
         case INVALID_PAYMENT:
@@ -30,10 +30,11 @@ void handle_event(event current_event)
         case SHIPMENT_ARRIVED:
             next_state = current_state->shipment_arrived();
             break;
-        case SHIPMENT_FAILED:
-            next_state = current_state->shipment_failed();
+        case SHIPMENT_LOST:
+            next_state = current_state->shipment_lost();
             break;
-        default: break:
+        default:
+            break;
     }
 
     if(next_state != NULL)

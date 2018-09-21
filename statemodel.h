@@ -2,6 +2,7 @@
 #define statemodel_h
 
 #include <stdlib.h>
+#include <stdio.h>
 #include "system.h"
 #include "state.h"
 

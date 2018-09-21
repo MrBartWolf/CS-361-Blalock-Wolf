@@ -1,4 +1,4 @@
-#include "acceping.h"
+#include "shipping.h"
 #include "system.h"
 #include "statemodel.h" // For the other states
 
@@ -12,7 +12,7 @@ state_t shipping = {
     shipment_arrived,      // shipment_arrived
     shipment_lost,         // shipment_lost
     entry_to_shipping,     // entry_to
-    exit_from_shipping     // exit_from
+    default_action    // exit_from
 };
 
 state_t* shipment_arrived() {
@@ -31,4 +31,3 @@ void entry_to_shipping() {
     get_address();
 }
 
-void exit_from_shipping() {}
