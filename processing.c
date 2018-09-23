@@ -18,8 +18,9 @@ state_t* invalid_payment()
 {
     if (increment_attempts() >= 3) {
         payment_rejected();
-        return &processing;
+        return &accepting;
     }
+    return &processing;
 }
 
 state_t* valid_payment()

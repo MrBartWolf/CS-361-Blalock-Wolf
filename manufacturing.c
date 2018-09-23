@@ -16,12 +16,14 @@ state_t manufacturing = {
 
 state_t* manufacture_failed()
 {
+    exit_from_manufacturing();
     update_stats(FAIL);
     return &accepting;
 }
 
 state_t* manufacture_completed()
 {
+    exit_from_manufacturing();
     charge_client();
     return &shipping;
 }

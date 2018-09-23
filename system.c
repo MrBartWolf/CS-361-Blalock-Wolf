@@ -5,10 +5,12 @@ static int attempts = 0;
 
 void get_order_size() 
 {
-    printf("Got an order size of = 0 items\n");
+    printf("Got an order of size = 0 items\n");
 }
 
-void reset_attempts() {
+void reset_attempts() 
+{
+    printf("Invalid Payment-Attempts Reset to 0\n");
     attempts = 0;
 }
 
