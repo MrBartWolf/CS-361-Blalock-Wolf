@@ -47,7 +47,7 @@ void handle_event(event current_event)
 
 void printStateName(void)
 {
-    printf("\n*****************\nCurrent State is: ");
+    printf("\n*-*-*-*-*-*-*-*-*-*-*-*\nState: ");
     if(current_state = &accepting)
         printf("ACCEPTING");
     else if(current_state = &processing)
@@ -56,5 +56,5 @@ void printStateName(void)
         printf("MANUFACTURING");
     else if(current_state = &shipping)
         printf("SHIPPING");
-    printf("\n*****************\n");
+    printf("\n*-*-*-*-*-*-*-*-*-*-*-*\n");
 }
