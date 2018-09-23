@@ -3,30 +3,74 @@
 
 static int attempts = 0;
 
-void get_order_size() {}
+void get_order_size() 
+{
+    printf("Got an order size of = 0 items\n");
+}
 
 void reset_attempts() {
     attempts = 0;
 }
 
-void get_pymnt_method() {}
+void get_pymnt_method() 
+{
+    printf("Getting Payment Method\n");
+}
 
-int increment_attempts() {
+int increment_attempts() 
+{
+    printf("Invalid Payment-Attempts Incremented to %d\n", (attempts+1));
     return ++attempts;
 }
 
-void payment_rejected() {}
+void payment_rejected() 
+{
+    printf("Payment Rejected\n");
+}
 
-void dispatch_factory_lines() {}
+void dispatch_factory_lines() 
+{
+    printf("Dispatching Factory Lines\n");
+}
 
-void shut_down_factory_lines() {}
+void shut_down_factory_lines() 
+{
+    printf("Shutting Down Factory Lines\n");
+}
 
-void charge_client() {}
+void charge_client() 
+{
+    printf("Client has been charged\n");
+}
 
-void get_address() {}
+void get_address() 
+{
+    printf("Getting Ship-To Address\n");
+}
 
-void start_warranty() {}
+void start_warranty() 
+{
+    printf("Warranty has started\n");
+}
 
-void refund() {}
+void refund() 
+{
+    printf("Refund Issued\n");
+}
 
-void update_stats(int order_status) {} 
+void update_stats(int order_status) 
+{
+    printf("Updating Statistics for ");
+    switch (order_status)
+    {
+        case FAIL:
+            printf("FAILED manufacturing\n");
+            break;
+        case LOST:
+            printf("LOST packages\n");
+            break;
+        default:
+            printf("SUCCESSFUL orders\n");
+            break;
+    }
+} 
