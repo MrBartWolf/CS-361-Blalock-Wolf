@@ -60,4 +60,5 @@ int main(void)
         if (current_event != INVALID_EVENT)
             handle_event(current_event);
     }
+    printf("\n");
 }
