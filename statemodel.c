@@ -1,3 +1,12 @@
+//-----------------------------------------------------------------------------
+//  Assignment  :   PA1-FSM
+//  Date        :   09/24/2018
+//
+//  Author      :   PA1 Team 18
+//
+//  File Name   :   statemodel.c
+//-----------------------------------------------------------------------------
+
 #include "statemodel.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -48,13 +57,13 @@ void handle_event(event current_event)
 void printStateName(void)
 {
     printf("\n*-*-*-*-*-*-*-*-*-*-*-*\nState: ");
-    if(current_state = &accepting)
+    if(current_state == &accepting)
         printf("ACCEPTING");
-    else if(current_state = &processing)
+    else if(current_state == &processing)
         printf("PROCESSING");
-    else if(current_state = &manufacturing)
+    else if(current_state == &manufacturing)
         printf("MANUFACTURING");
-    else if(current_state = &shipping)
+    else if(current_state == &shipping)
         printf("SHIPPING");
     printf("\n*-*-*-*-*-*-*-*-*-*-*-*\n");
 }

@@ -1,3 +1,12 @@
+//-----------------------------------------------------------------------------
+//  Assignment  :   PA1-FSM
+//  Date        :   09/24/2018
+//
+//  Author      :   PA1 Team 18
+//
+//  File Name   :   processing.c
+//-----------------------------------------------------------------------------
+
 #include "processing.h"
 #include "system.h"
 #include "statemodel.h"
